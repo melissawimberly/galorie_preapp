@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="en"> <!--  class="no-js"  -->
     <head>
         <meta charset="utf-8">
         <title>Galorie</title>
@@ -43,10 +43,10 @@
                   <td><input class="form-control food-input"></td>
                   <td><input class="form-control portion-input"></td>
                   <td><input class="form-control calorie-input"></td>
-                  <td><input class="btn btn-primary add-blog"></td>
+                  <td><button class="btn btn-primary add-calorie">Add Calorie</button></td>
                 </tr>
               </thead>
-              <tbody class="blogs-list"></tbody>
+              <tbody class="calories-list"></tbody>
             </table>
           </div>
 
@@ -103,6 +103,12 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        <script type="text/template" class="calories-list-template">
+          <td><span class="food"><%food%></span></td>
+          <td><span class="portion"><%portion%></span></td>
+          <td><span class="calorie-input"><%calorie-input%></span></td>
+          <td><button class="btn btn-warning edit-calorie">Edit</button> <button class="btn btn-danger delete-calorie">Delete</button></td>
         </script>
 
         <!-- build:js scripts/vendor.js -->
